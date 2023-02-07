@@ -1,0 +1,85 @@
+.main {
+  &__cta {
+    background-color: $darknavy;
+
+    &-container {
+      background-image: url("../img/circle1.png"), url("../img/circle2.png"),
+        url("../img/circle3.png");
+      background-repeat: no-repeat;
+      background-size: auto, auto, auto;
+      background-position: center bottom, center calc(260px) bottom,
+        right bottom;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 102px;
+      padding-bottom: 102px;
+    }
+
+    &-title {
+      width: 415px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 48px;
+
+      letter-spacing: -2.14286px;
+
+      color: $white;
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    &-link {
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: $lightgrey;
+      border-radius: 4px;
+      gap: 11px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      &-title {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      &-container {
+        padding-top: 62px;
+        padding-bottom: 62px;
+        flex-direction: column;
+        background-image: url("../img/circle1.png"), url("../img/circle2.png"),
+        url("../img/circle3.png");
+      background-repeat: no-repeat;
+      background-size: auto, auto, auto;
+      background-position: left bottom, center calc(260px) bottom,
+        right bottom;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      &-title {
+        width: 305px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 32px;
+        line-height: 32px;
+      }
+      &-container {
+        padding-top: 88px;
+        padding-bottom: 88px;
+        flex-direction: column;
+        background-image: url("../img/circle1.png"), url("../img/circle3.png");
+        background-repeat: no-repeat;
+        background-size: auto, auto;
+        background-position: left calc(-50%) bottom, right bottom;
+      }
+    }
+  }
+}

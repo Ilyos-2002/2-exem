@@ -1,0 +1,202 @@
+.main {
+    &__guide {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+    
+        &-line {
+          width: 982px;
+          
+    
+          margin-top: 108px;
+          margin-bottom: 400px;
+          border: 15px solid $lightgrey;
+        }
+    
+        &-wrapper {
+          position: absolute;
+          display: grid;
+          gap: 30px;   
+          grid-template-columns:  33% 33% 33%;
+          top: 160px;
+        }
+    
+        &-section {
+          
+        }
+    
+        &-img1 {
+          width: 96px;
+          height: 96px;
+          margin-bottom: 40px;
+          border-radius: 50%;
+          background-color: $yellow;
+          background-image: url("../img/guide-img1.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &-img2 {
+          width: 96px;
+          height: 96px;
+          margin-bottom: 40px;
+          border-radius: 50%;
+          background-color: $yellow;
+          background-image: url("../img/guide-img2.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &-img3 {
+          width: 96px;
+          height: 96px;
+          margin-bottom: 40px;
+          border-radius: 50%;
+          background-color: $yellow;
+          background-image: url("../img/guide-img3.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+    
+        &-title {
+          font-size: 24px;
+          line-height: 28px;
+          margin-bottom: 27px;
+          letter-spacing: -1.07143px;
+          color: $darknavy;
+        }
+    
+        &-text {
+          width: 350px;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          color: $dimgrey;
+        }
+    
+        @media only screen and (max-width:1024px) {
+          &__guide {
+    
+    
+          }
+    
+          &-line {
+            width: 1px;
+            height: 505px ;
+            margin-left: 53px;
+            
+          }
+    
+          &-wrapper {
+            position: absolute;
+            display: grid;
+            gap: 30px;   
+            grid-template-columns: auto;
+            top: 160px;
+          }
+    
+          &-section {
+            
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+          }
+    
+          &-img1 {
+            margin-right: 80px;
+           
+          }
+    
+          &-img2 {
+            margin-right: 80px;
+          }
+    
+          &-img3 {
+            margin-right: 80px;
+          }
+      
+    
+        }
+    
+        @media only screen and (max-width:768px) {
+    
+          & {
+            padding-top: 0;
+            margin-top: 0;
+    
+    
+          }
+          &-line {
+            width: 0;
+            height: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            border: none;
+            
+          }
+    
+          &-wrapper {
+            position: relative;
+            margin-top: 0;
+          }
+    
+          &-section {  
+            margin-right: auto;
+            margin-left: auto; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+           
+          }
+    
+          &-content {
+            
+            
+            
+    
+          }
+    
+          &-title {
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: -0.892857px;       
+            color: $darknavy;
+    
+          }
+    
+          &-text {
+            
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;        
+            text-align: center;
+            color: $dimgrey;
+    
+          }
+    
+        
+    
+          &-img1 {
+            margin-left: auto;
+            margin-right: auto; 
+            margin-bottom: 24px;
+          }
+    
+          &-img2 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 24px;
+          }
+    
+          &-img3 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 24px;
+          }
+    
+    
+        
+    
+    
+        }
+      }
+}

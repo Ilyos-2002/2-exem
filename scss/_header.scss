@@ -1,0 +1,88 @@
+.header {
+  &__container {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/gamburger-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    border: none;
+    background-color: transparent;
+
+    display: none;
+  }
+
+  &__list {
+    margin-left: 58px;
+    gap: 32px;
+
+    &-item {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 25px;
+      color: $dimgrey;
+    }
+
+    &-item:hover {
+      color: $yellow;
+  
+    }
+  }
+
+  &__link {
+    padding: 14px 39px;
+    margin-left: auto;
+    border: 3px solid transparent;
+    background:$yellow;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: $white;
+  }
+
+  &__link:hover {
+    color: $yellow;
+    border: 3px solid $yellow;
+    background: $white;
+
+  }
+
+  @media only screen and (max-width:768px) {
+
+    &__container{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__btn {
+      display: block;
+    }
+
+    &__logo {
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    &__list {
+      display: none;
+    }
+    
+    &__link {
+      display: none;
+    }
+
+  }
+
+
+  
+ 
+}
+

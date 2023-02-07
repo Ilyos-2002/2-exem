@@ -1,0 +1,151 @@
+.main {
+  //  INTRO section
+  &__intro {
+    background-image:  url("../img/intro-left.svg"), url("../img/intro-right.svg"),url("../img/intro-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, auto,cover;
+    background-position: left center ,730px 335px  , center ;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      padding-top: 153px;
+      padding-bottom: 153px;
+    }
+
+    &-title {
+      width: 480px;
+      margin-bottom: 50px;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -2.5px;
+      color: $white;
+    }
+
+    &-text {
+      width: 405px;
+      margin-bottom: 70px;
+      margin-left: 95px;
+      font-size: 15px;
+      line-height: 25px;
+      color: $white;
+    }
+
+    &-text::after {
+      display: block;
+      content: " ";
+    }
+    &-link {
+      width: 185px;
+      padding: 14px 39px;
+      border: 3px solid transparent;
+      background: $yellow;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: $white;
+      transition: all 0.9s ease;
+    }
+
+    &-link:hover {
+      color: $yellow;
+      border: 3px solid $yellow;
+      background: $white;
+      transition: all 0.9s ease;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      & {
+        background-image: url("../img/intro-right.svg") ,url("../img/intro-bg1024px.png");
+        background-repeat: no-repeat;
+        background-size:auto, cover;
+        background-position:-100px 490px, center;
+      }
+      &-container {
+        padding-top: 137px;
+        padding-bottom: 217px;
+      }
+
+      &-title {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: -2.5px;
+        color: $white;
+      }
+      &-text {
+        margin-right: auto;
+        margin-left: auto;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $white;
+        margin-bottom: 32px;
+      }
+
+      &-link {
+        margin-right: auto;
+        margin-left: auto;
+        display:inline-block;
+        padding: 14px 39px;
+        border: 3px solid transparent;
+        background: $yellow;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $white;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      & {
+        background-image: url("../img/intro-right.svg"), url("../img/intro-bg768px.png");
+        background-repeat: no-repeat;
+        background-size:auto, cover;
+        background-position:-300px 400px ,center;
+      }
+
+      &-container {
+        padding-top: 115px;
+        padding-bottom: 179px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &-title {
+        width: 311px;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -1.78571px;
+        color: $white;
+        margin-bottom: 24px;
+      }
+
+      &-text {
+        width: 311px;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $white;
+        margin-bottom: 34px;
+      }
+
+      &-link {
+       
+      
+        
+        position: relative;
+      }
+    }
+  }
+
+}

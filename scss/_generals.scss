@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Space Mono" ,"Arial", "sans-serif";
+  font-weight: 700;
+  color: #495567;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  font-family: "Space Mono", "Arial", "sans-serif";
+  font-weight: 700;
+}
+
+p {
+  display: block;
+  font-family: 'Lexend Deca', "Arial" ,sans-serif;
+  font-weight: 400;
+}
